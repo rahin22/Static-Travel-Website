@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Destinations</title> <!--Sets the webpage title-->
+        <link rel="stylesheet" href="myStyle.css"> <!--Links the CSS stylesheet -->
+        <script defer src="app.js"></script><!--Links the Javascript file-->
+    </head>
+   
+    <body>
+        <header>
+            <div class="topnav"> <!--Establishes the topnav div-->
+                <a href="index.html">Home</a> <!--Sets the home button on the navbar-->
+                <a href="info.html">Destinations</a> <!--Sets the info button on the navbar-->
+                <a href="about.html">About</a><!--Sets the about button on the navbar-->
+                <a href="book.html">Book Now</a><!--Sets the book now button on the navbar-->
+             </div> <!--Closes the topnav div-->
+        </header>
+
+        <section>
+            <div class="main2">
+              <h1>Experience<br><span>The best trip ever</span></h1>
+       
+              <div class="subtitle2"> <!--Establishes the subtitle2 div-->
+                <p> <!--Creates the subtitle paragraph with newlines-->
+                 Six destinations<br><span>Six different ways to find yourself</span>
+                </p> <!--Closes the subtitle paragraph-->
+              </div> <!--Closes the subtitle div-->
+          
+              <div class="arrow2"></div> <!--Makes the arrow image div-->
+              <a href="#bottom" class="arrow2" role="button"></a>
+          
+            </div>
+        
+        </section>
+
+        <!--Establishes a new website section-->
+        <section>
+          
+          <div class="btext2">
+            <h2>Click on the cards to find out more</h2>
+          </div>  
+
+         <div class="card-container" id="bottom"> <!--Establishes the card container div-->
+     
+          <div class="card card1" onclick="redirectToURL('france.html')"> <!--Makes the card1 div--> 
+          <h2>France</h2>
+          </div>
+   
+          <div class="card card2" onclick="redirectToURL('egypt.html')"> <!--Makes the card2 div--> 
+           <h2>Egypt</h2>   
+          </div>
+    
+          <div class="card card3" onclick="redirectToURL('usa.html')"> <!--Makes the card3 div--> 
+            <h2>USA</h2>   
+          </div>
+          
+          <div class="card card4" onclick="redirectToURL('japan.html')"> <!--Makes the card3 div--> 
+            <h2>Japan</h2>   
+          </div>
+
+          <div class="card card5" onclick="redirectToURL('australia.html')"> <!--Makes the card3 div--> 
+            <h2>Australia</h2>   
+          </div>
+
+          <div class="card card6" onclick="redirectToURL('hawaii.html')"> <!--Makes the card3 div--> 
+            <h2>Hawaii</h2>   
+          </div>
+  
+         </div> <!--Closes the card container div--> 
+
+        </section>
+        <!--Closes the website section-->
+       
+    </body>
+</html>

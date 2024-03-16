@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>USA</title> <!--Sets the webpage title-->
+        <link rel="stylesheet" href="myStyle.css"> <!--Links the CSS stylesheet -->
+        <script defer src="app.js"></script><!--Links the Javascript file-->
+        <style>            
+            section{
+                min-height: 100vh;
+            }
+       
+       
+            .parallax {
+                background-image: linear-gradient(rgba(44, 43, 43, 0.7), rgba(43, 42, 42, 0.7)), url("https://wallpapercave.com/wp/wp5430832.jpg");
+                min-height: 800px; 
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .cardx{
+                color: azure;
+                width: 250px;
+                height: 230px;
+                border-radius: 10px;
+                padding: 15px 25px;
+                margin: 10px 15px;
+                background-position: center;
+                background-size: cover;
+                margin-left: 150px;
+            }
+
+            .cardx1{
+               background-image: url(https://wallpapers.com/images/featured/new-york-city-5oaa14h4mw6w3o71.jpg);
+            }
+
+            .cardx2{
+               background-image: url(https://media.istockphoto.com/id/991219044/photo/the-financial-district-in-los-angeles-on-a-sunny-day.jpg?s=170667a&w=0&k=20&c=1C7zS7hfi3d0RRqJHR_Nb24-71pffj3GgRm1Lfv_MV0=);
+            }
+ 
+            .cardx3{
+               background-image: url(https://c4.wallpaperflare.com/wallpaper/737/794/474/world-1920x1200-chicago-night-wallpaper-preview.jpg);
+            }
+
+            .card-containerx {
+               margin-top: 110px;
+               position: absolute;
+            }
+
+            .textcont{
+                color: black;
+                margin-left: 20pc;
+                width: 500px;
+            }
+
+            .columns{
+                text-align: center;
+                margin-right: 40px;
+                padding-top: 400px;
+                float: right;
+
+            }
+
+            .price{
+                list-style-type: none;
+                border: 1px solid #eee;
+                border-radius: 10px;
+                transition: 0.5s;
+            }
+
+            .price:hover {
+                box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+            }
+
+            .price li {
+                border-bottom: 1px solid #eee;
+                padding: 20px;
+            }
+            
+            .price .header{
+                font-weight: bolder;
+                font-size: 25px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+
+            .price .grey{
+                font-weight: bolder;
+                font-size: 23px;
+            }
+
+            .button:hover {
+                background-color: white;
+                color: black;
+            }
+
+            .button {
+                background-color: black;
+                border-radius: 10px;
+                color: white;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 18px;
+                transition-duration: 0.4s;
+            }
+
+
+        </style>
+    </head>
+   
+    <body>
+
+      <header>
+        <div class="topnav"> <!--Establishes the topnav div-->
+            <a href="index.html">Home</a> <!--Sets the home button on the navbar-->
+            <a href="info.html">Destinations</a> <!--Sets the info button on the navbar-->
+            <a href="about.html">About</a><!--Sets the about button on the navbar-->
+            <a href="book.html">Book Now</a><!--Sets the book now button on the navbar-->
+        </div> <!--Closes the topnav div-->
+      </header>
+      
+
+      <div class="parallax">
+         <div class="main"> <!--Establishes the main div-->
+            <h1>USA</h1> <!--Creates the div heading with newlines-->
+             
+            <div class="subtitle"> <!--Establishes the subtitle div-->
+               <p> <!--Creates the subtitle paragraph with newlines-->
+                Explore the massive metropoles of the USA<br><span>and experience the land of the free</span>
+               </p> <!--Closes the subtitle paragraph-->
+             </div> <!--Closes the subtitle div-->
+             
+             <div class="arrow"></div> <!--Makes the arrow image div-->
+             <a href="#bottom" class="arrow" role="button"></a>
+       
+          </div> <!--Closes the main div-->
+      </div>
+
+     <section>
+
+        <div class="card-containerx" id="bottom"> <!--Establishes the card container div-->
+       
+            <div class="cardx cardx1"> <!--Makes the card1 div--> 
+               <h2>New York</h2>
+                <div class="textcont">
+                 <h3>New York City, a global metropolis, dazzles with its iconic skyline, renowned landmarks like Times Square and the Statue of Liberty, and a vibrant cultural scene that epitomizes urban diversity.</h3>
+                </div>
+            </div> 
+
+            <div class="cardx cardx2"> <!--Makes the card2 div--> 
+               <h2>Los Angeles</h2> 
+               <div class="textcont">
+                <h3>Los Angeles, a sprawling city of dreams, lures with its glamorous entertainment industry, sun-soaked beaches, and a unique blend of diverse neighborhoods that showcase the essence of Southern California living.</h3>
+               </div>   
+            </div>
+          
+            <div class="cardx cardx3"> <!--Makes the card3 div--> 
+              <h2>Chicago</h2>  
+              <div class="textcont">
+                <h3>Chicago, the Windy City, enchants with its stunning architecture, renowned museums like the Art Institute, and a lively urban atmosphere set against the backdrop of Lake Michigan's sparkling waters.</h3>
+               </div>
+           </div> 
+        
+          </div> <!--Closes the card container div--> 
+    
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Travel Package</li>
+              <li class="grey">$1000 /Per Person</li>
+              <li>3 City Tour</li>
+              <li>Acommodation Included</li>
+              <li>Personal Tour Guide </li>
+              <li class="grey"><a href="book.html" class="button">Book Now</a></li>
+            </ul>
+          </div>
+     </section>
+
+    </body>
+    </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Destinations</title> <!--Sets the webpage title-->
+        <link rel="stylesheet" href="myStyle.css"> <!--Links the CSS stylesheet -->
+        <script defer src="app.js"></script><!--Links the Javascript file-->
+        <style>
+            .booking-menu{
+                padding-top: 12px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bolder;
+                margin-bottom: 50px;
+                padding: 20px;
+            }
+
+            .form-group {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+
+            #booking-form{
+                padding-top: 50px;
+            }
+
+            button[type="submit"]{
+                padding: 20px;
+                border-radius: 5px;
+                background-color: black;
+                color: white;
+                font-size: 22px;
+                font-weight: bolder;
+                border-color: black;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+
+            button:hover[type="submit"]{
+                background-color: white;
+                color: black;
+                box-shadow: 0 8px 12px 0 rgba(15, 8, 8, 0.859)
+            }
+
+            input[type="date"]{
+                border-radius: 5px;
+                padding: 10px;
+                border-color: black;
+                transition-duration: 0.4s;
+            }
+
+            input:hover[type="date"]{
+                box-shadow: 0 8px 12px 0 rgba(15, 8, 8, 0.859)
+            }
+
+            input[type="name"]{
+                border-radius: 5px;
+                padding: 10px;
+                border-color: black;
+            }
+
+            select[id="country"]{
+                border-radius: 5px;
+                padding: 10px;
+                border-color: black;
+                background-color: white;
+            }
+
+            input[type="number"]{
+                border-radius: 10px;
+                padding: 10px;
+                border-color: black;
+            }
+            
+            
+            select[id="tour"]{
+                border-radius: 5px;
+                padding: 10px;
+                border-color: black;
+                background-color: white;
+            }
+
+            input[type="email"]{
+                border-radius: 10px;
+                padding: 10px;
+                border-color: black;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <header>
+            <div class="topnav"> <!--Establishes the topnav div-->
+                <a href="index.html">Home</a> <!--Sets the home button on the navbar-->
+                <a href="info.html">Destinations</a> <!--Sets the info button on the navbar-->
+                <a href="about.html">About</a><!--Sets the about button on the navbar-->
+                <a href="book.html">Book Now</a><!--Sets the book now button on the navbar-->
+             </div> <!--Closes the topnav div-->
+        </header>
+
+        <section>
+            <div class="main2">
+              <h1>Book<br><span>Your Trip</span></h1>
+       
+              <div class="subtitle2"> <!--Establishes the subtitle2 div-->
+                <p> <!--Creates the subtitle paragraph with newlines-->
+                 Get to have an amazing adventure<br><span>Tours starting from $1000 per person</span>
+                </p> <!--Closes the subtitle paragraph-->
+              </div> <!--Closes the subtitle div-->
+          
+              <div class="arrow2"></div> <!--Makes the arrow image div-->
+              <a href="#bottom" class="arrow2" role="button"></a>
+          
+            </div>
+        
+        </section>
+
+
+
+
+
+        <section>
+        <div class="booking-menu" id="bottom">
+        <form id="booking-form">
+           
+            <div class="form-group">
+                <label for="fname">First Name</label><br>
+                <input type="name" id="first" name="first" required>
+              </div>
+            
+              <div class="form-group">
+                <label for="lname">Last Name</label><br>
+                <input type="name" id="last" name="last" required>
+              </div>
+              <br><br>
+            
+            <label for="departure">Departure Date:</label><br>
+            <input type="date" id="departure" name="departure" required><br><br>
+
+            <label for="country">Select Tour Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="france">France</option>
+                <option value="egypt">Egypt</option>
+                <option value="usa">USA</option>
+                <option value="japan">Japan</option>
+                <option value="australia">Australia</option>
+                <option value="hawaii">Hawaii</option>
+            </select><br><br>
+
+            <label for="passengers">Passengers:</label><br>
+            <input type="number" id="passengers" name="passengers" min="1" max='10' required><br><br>
+
+            <label for="tour">Select a Tour (fee per person):</label><br>
+            <select id="tour" name="tour" required>
+                <option value="small">2 Week Tour ($1000)</option>
+                <option value="medium">1 Month Tour ($2500)</option>
+                <option value="special">2 Month Tour ($4000)</option>
+            </select><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+ 
+</section>

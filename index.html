@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <!--Establishes the head section of the website-->
+   <head>
+    <title>Ultimate Travel</title> <!--Sets the webpage title-->
+    <link rel="stylesheet" href="myStyle.css"> <!--Links the CSS stylesheet -->
+    <script defer src="app.js"></script><!--Links the Javascript file-->
+   </head>
+   <!--Closes the head section of the webstie-->
+
+
+
+ <!--Establishes the body section of the website-->  
+ <body>
+     
+  
+       <div class="container"> <!--Establishes the container div-->
+         <video autoplay loop muted plays-inline class="backgroundvid"> <!--Sets the background video parameters and class-->
+          <source src="images/video.mp4" type="video/mp4"> <!--Sets the the video source-->
+         </video> <!--Closes the video section-->
+       </div> <!--Closes the container div-->
+    
+    
+   
+    <!--Establishes the header section of the website-->
+    <header>
+      <div class="topnav"> <!--Establishes the topnav div-->
+         <a href="index.html">Home</a> <!--Sets the home button on the navbar-->
+         <a href="info.html">Destinations</a> <!--Sets the info button on the navbar-->
+         <a href="about.html">About</a><!--Sets the about button on the navbar-->
+         <a href="book.html">Book Now</a><!--Sets the book now button on the navbar-->
+      </div> <!--Closes the topnav div-->
+    </header>   
+    <!--Closes the header section of the website-->
+   
+    <!--Establishes a new website section-->
+    <section>
+     
+      <div class="main"> <!--Establishes the main div-->
+        <h1>Ultimate<br><span>Travel</span></h1> <!--Creates the div heading with newlines-->
+         
+        <div class="subtitle"> <!--Establishes the subtitle div-->
+           <p> <!--Creates the subtitle paragraph with newlines-->
+            Welcome to Ultimate Travel, where unforgettable adventures await<br><span>ignite your wanderlust and embark on a journey of a lifetime!</span>
+           </p> <!--Closes the subtitle paragraph-->
+         </div> <!--Closes the subtitle div-->
+         
+         <div class="arrow"></div> <!--Makes the arrow image div-->
+         <a href="#bottom" class="arrow" role="button"></a>
+   
+       </div> <!--Closes the main div-->
+  
+  </section>
+  <!--Closes the website section-->
+    
+  
+   <!--Establishes a new website section-->
+   <section>
+
+      <div class="card-container"> <!--Establishes the card container div-->
+       
+        <div class="card card1" onclick="redirectToURL('france.html')"> <!--Makes the card1 div--> 
+           <h2>France</h2>
+        </div>   
+     
+        <div class="card card2" onclick="redirectToURL('egypt.html')"> <!--Makes the card2 div--> 
+           <h2>Egypt</h2>   
+        </div>
+      
+        <div class="card card3" onclick="redirectToURL('usa.html')"> <!--Makes the card3 div--> 
+          <h2>USA</h2>   
+       </div> 
+    
+      </div> <!--Closes the card container div--> 
+  
+    </section>
+    <!--Closes the website section-->
+
+    <div class="btext" id="bottom"> 
+    <h2>Discover the wonders of the world,<br>from the enchanting streets of France<br>to the ancient wonders of Egypt<br>and much more as you embark on the journey of a lifetime<br>never stop exploring</h2>
+    </div>
+
+ </body>
+</html>
